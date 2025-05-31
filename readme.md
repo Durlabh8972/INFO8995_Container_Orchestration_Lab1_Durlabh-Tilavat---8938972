@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Docker Compose Multi-Service Project
 
 **Name:** Durlabh Tilavat
