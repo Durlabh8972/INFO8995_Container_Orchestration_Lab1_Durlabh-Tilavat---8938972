@@ -127,11 +127,3 @@ Access:
 - ✅ Well-structured Compose files, clearly aligned with assignment requirements
 
 ---
-
-
-
-## 🧑 Author
-
-**Rishikumar Patel**
-Student ID: **8972657**
->>>>>>> 5b92b39 (Initial commit)
