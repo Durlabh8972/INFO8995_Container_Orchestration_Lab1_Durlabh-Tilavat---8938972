@@ -7,13 +7,16 @@
 
 ## 📚 Overview
 
-This project demonstrates a multi-service architecture using **Docker Compose**, following best practices in containerization, scaling, and persistent data storage.
+It uses Docker Compose to develop a strong multi-service architecture for the project.
+Best practices are applied to field the code, manage services and manage diverse environments.
+There is a database, an admin graphical user interface (GUI), a React frontend and a Node.js server behind the application.
+Some important features are scalability, using Nginx to balance load and checking service health.
+Using Docker volumes, persistent data storage is set up to ensure a reliable service.
 
-The project is organized into two Compose files to align with assignment sections:
+##The project is structured into two Docker Compose files, each reflecting a specific assignment section:
 
-- ✅ **Multiple Services** → MySQL + PHPMyAdmin
-- ✅ **Application with Dependencies** → PostgreSQL + pgAdmin + ReactJS + NodeJS API (with scaling + load balancing)
-
+-✅ Multiple Services: MySQL with PHPMyAdmin
+-✅ Application with Dependencies: PostgreSQL, pgAdmin, ReactJS frontend, and a scalable NodeJS API with Nginx load balancing
 ---
 
 ## 🛠️ Services Overview
@@ -22,31 +25,29 @@ The project is organized into two Compose files to align with assignment section
 
 ### `docker-compose.mysql.yml`
 
-- ✅ **MySQL** database (port **3306**)
-- ✅ **PHPMyAdmin** GUI (port **8081**)
-- ✅ Credentials managed via environment variables
-- ✅ Persistent data storage using Docker volumes
+-✅ MySQL database running on port 3306
+-✅ PHPMyAdmin GUI accessible on port 8081
+-✅ Secure credential management using environment variables
+-✅ Persistent data storage implemented with Docker volumes
 
 ## 📝 Screenshots
-![image](https://github.com/user-attachments/assets/030020aa-9264-495f-a34b-042251d723fb)
+<img width="952" alt="image" src="https://github.com/user-attachments/assets/673d9176-bf5b-4aea-9275-750c1ef8b66b" />
 
-![image](https://github.com/user-attachments/assets/2167fe74-6394-461e-a3b4-a7c0a37799ff)
+
+<img width="947" alt="image" src="https://github.com/user-attachments/assets/2f53d5aa-36b7-49c7-b43b-b48ce0220d63" />
+
 
 
 ---
 
 ### `docker-compose.pg.yml`
 
-- ✅ **PostgreSQL** database (port **5432**)
-- ✅ **pgAdmin4** GUI (port **8082**)
-- ✅ pgAdmin starts only after PostgreSQL is healthy (using `depends_on` + healthcheck)
-
-- ✅ **ReactJS (Next.js)** frontend
-- ✅ **NodeJS (Express)** backend API
-- ✅ Multi-stage builds for both React and NodeJS
-- ✅ Backend API **scaled to 3 replicas**
-- ✅ Nginx **load balances** across API replicas
-- ✅ Nginx serves React static build — **single entry point** → no CORS issues
+-✅ pgAdmin4 GUI on port 8082, launched only after PostgreSQL is healthy (depends_on + healthcheck)
+-✅ PostgreSQL database on port 5432
+-✅ Backend API scaled to 3 replicas and load balanced via Nginx
+-✅ ReactJS (Next.js) frontend and NodeJS (Express) backend API
+-✅ Multi-stage builds for optimized React and NodeJS images
+-✅ Nginx serves the React static build as a single entry point, eliminating CORS issues
 
 ## 📝 Screenshots
 
