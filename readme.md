@@ -47,20 +47,22 @@ Using Docker volumes, persistent data storage is set up to ensure a reliable ser
 
 ### `docker-compose.pg.yml`
 
--✅ pgAdmin4 GUI on port 8082, launched only after PostgreSQL is healthy (depends_on + healthcheck)
--✅ PostgreSQL database on port 5432
--✅ Backend API scaled to 3 replicas and load balanced via Nginx
--✅ ReactJS (Next.js) frontend and NodeJS (Express) backend API
--✅ Multi-stage builds for optimized React and NodeJS images
--✅ Nginx serves the React static build as a single entry point, eliminating CORS issues
+- ✅ pgAdmin4 GUI on port 8082, launched only after PostgreSQL is healthy (depends_on + healthcheck)
+- ✅ PostgreSQL database on port 5432
+- ✅ Backend API scaled to 3 replicas and load balanced via Nginx
+- ✅ ReactJS (Next.js) frontend and NodeJS (Express) backend API
+- ✅ Multi-stage builds for optimized React and NodeJS images
+- ✅ Nginx serves the React static build as a single entry point, eliminating CORS issues
 
 ## 📝 Screenshots
 
-![image](https://github.com/user-attachments/assets/1d2fc817-2033-4e90-8ec9-084263f3774d)
+<img width="950" alt="image" src="https://github.com/user-attachments/assets/895e8b33-c47e-43f8-9446-ec97ddb29536" />
 
-![image](https://github.com/user-attachments/assets/1a47d1d0-6511-423a-bd16-8fa8f794bea1)
 
-![image](https://github.com/user-attachments/assets/12424169-fe64-494f-8666-fc68353f1655)
+<img width="952" alt="image" src="https://github.com/user-attachments/assets/bcf72e4e-2fa7-4e6c-b20a-f4eda5667b40" />
+
+
+<img width="950" alt="image" src="https://github.com/user-attachments/assets/23198306-ec94-4486-987a-7618abb4df3d" />
 
 
 
@@ -77,7 +79,7 @@ Using Docker volumes, persistent data storage is set up to ensure a reliable ser
 docker-compose -f docker-compose.mysql.yml up --build
 ```
 
-Access:
+How to Access Services:
 
 - PHPMyAdmin → [http://localhost:8081](http://localhost:8081)
 - MySQL database → `localhost:3306`
@@ -108,20 +110,20 @@ Access:
 | PostgreSQL    | 5432                                            |
 | pgAdmin4      | 8082                                            |
 | React + Nginx | 3000                                            |
-| NodeJS API    | Load balanced internally (not exposed directly) |
+| NodeJS API    | Load balanced internally  |
 
 ---
 
 ## ✅ Key Features Demonstrated
 
-- ✅ Multiple services in Compose
-- ✅ Environment variables for DB credentials
-- ✅ Persistent storage with volumes
-- ✅ Application dependencies and health checks
-- ✅ Multi-stage builds for React and NodeJS
-- ✅ Scaling and load balancing with Nginx upstream config
-- ✅ Clean architecture → Nginx as single entry point → no CORS issues
-- ✅ Organized Compose files → aligned with assignment sections
+- ✅ Multi-service architecture using Docker Compose
+- ✅ Secure credential management with environment variables
+- ✅ Persistent data storage through Docker volumes
+- ✅ Dependency management with health checks (depends_on, healthcheck)
+- ✅ Multi-stage Docker builds for optimized React and NodeJS containers
+- ✅ Scalable backend with Nginx load balancing across replicas
+- ✅ Clean architecture using Nginx as a single entry point (avoids CORS issues)
+- ✅ Well-structured Compose files, clearly aligned with assignment requirements
 
 ---
 
