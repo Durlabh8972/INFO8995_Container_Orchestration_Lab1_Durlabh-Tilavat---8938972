@@ -127,25 +127,6 @@ Access:
 
 ---
 
-## 🧭 Compose Files Summary
 
-| Compose File               | Purpose                                                                                            |
-| -------------------------- | -------------------------------------------------------------------------------------------------- |
-| `docker-compose.mysql.yml` | MySQL + PHPMyAdmin (**Multiple Services**)                                                         |
-| `docker-compose.pg.yml`    | PostgreSQL + pgAdmin + React + API (**Dependencies, Scaling, Load balancing, Multi-stage builds**) |
-
----
-
-## 📁 Repository Structure
-
-```
-/
-├── backend/            # NodeJS API (multi-stage Dockerfile)
-├── frontend/           # ReactJS app (multi-stage Dockerfile)
-├── nginx/default.conf  # Nginx reverse-proxy config
-├── docker-compose.mysql.yml  # MySQL + PHPMyAdmin
-├── docker-compose.pg.yml     # PostgreSQL + pgAdmin + React + API
-└── README.md           # Project documentation (this file)
-```
 
 
