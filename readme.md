@@ -16,6 +16,7 @@ Using Docker volumes, persistent data storage is set up to ensure a reliable ser
 ##The project is structured into two Docker Compose files, each reflecting a specific assignment section:
 
 -✅ Multiple Services: MySQL with PHPMyAdmin
+
 -✅ Application with Dependencies: PostgreSQL, pgAdmin, ReactJS frontend, and a scalable NodeJS API with Nginx load balancing
 ---
 
