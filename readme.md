@@ -27,13 +27,13 @@ Using Docker volumes, persistent data storage is set up to ensure a reliable ser
 
 ### `docker-compose.mysql.yml`
 
--✅ MySQL database running on port 3306
+- ✅ MySQL database running on port 3306
 
--✅ PHPMyAdmin GUI accessible on port 8081
+- ✅ PHPMyAdmin GUI accessible on port 8081
 
--✅ Secure credential management using environment variables
+- ✅ Secure credential management using environment variables
 
--✅ Persistent data storage implemented with Docker volumes
+- ✅ Persistent data storage implemented with Docker volumes
 
 ## 📝 Screenshots
 <img width="952" alt="image" src="https://github.com/user-attachments/assets/673d9176-bf5b-4aea-9275-750c1ef8b66b" />
@@ -146,9 +146,4 @@ Access:
 └── README.md           # Project documentation (this file)
 ```
 
----
 
-## 🧑 Author
-
-**Rishikumar Patel**
-Student ID: **8972657**
