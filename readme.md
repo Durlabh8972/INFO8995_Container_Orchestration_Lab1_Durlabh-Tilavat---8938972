@@ -1,7 +1,7 @@
 # Docker Compose Multi-Service Project
 
-**Name:** Rishikumar Patel
-**Student ID:** 8972657
+**Name:** Durlabh Tilavat
+**Student ID:** 8938972
 
 ---
 
