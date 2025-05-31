@@ -18,6 +18,7 @@ Using Docker volumes, persistent data storage is set up to ensure a reliable ser
 -✅ Multiple Services: MySQL with PHPMyAdmin
 
 -✅ Application with Dependencies: PostgreSQL, pgAdmin, ReactJS frontend, and a scalable NodeJS API with Nginx load balancing
+
 ---
 
 ## 🛠️ Services Overview
@@ -27,8 +28,11 @@ Using Docker volumes, persistent data storage is set up to ensure a reliable ser
 ### `docker-compose.mysql.yml`
 
 -✅ MySQL database running on port 3306
+
 -✅ PHPMyAdmin GUI accessible on port 8081
+
 -✅ Secure credential management using environment variables
+
 -✅ Persistent data storage implemented with Docker volumes
 
 ## 📝 Screenshots
